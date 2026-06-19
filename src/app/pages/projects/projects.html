@@ -1,0 +1,14 @@
+<section class="projects">
+  <div class="projects-container">
+
+    @for (proyecto of projects; track proyecto.id) {
+      <div class="card">
+        <div class="card-content">
+          <h3>{{ proyecto.titulo }}</h3>
+          <p>{{ proyecto.descripcion }}</p>
+          </div>
+        </div>
+    }
+
+  </div>
+</section>

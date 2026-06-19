@@ -1,0 +1,33 @@
+{
+"proyectos" : [
+    {
+        "id": "1",
+        "nombre" : "server apache",
+        "tecnologias" : "javaSCript, php, CSS, HTML",
+        "rol" : "desarrollador",
+        "link" : "https://github.com/manutosetti/apache"
+    },
+{
+    "id": "2",
+    "nombre" : "historia",
+    "tecnologias" : "javaSCript, SS, HTML",
+    "rol" : "desarrollador",
+    "link" : "https://github.com/manutosetti/elevadora-sampi"
+},
+{
+    "id": "3",
+    "nombre" : "colaboracion",
+    "tecnologias" : "phyton",
+    "rol" : "desarrollador",
+    "link" : "https://github.com/manutosetti/colaboracion"
+},
+{
+    "id": "4",
+    "nombre" : "desafios-poo",
+    "tecnologias" : "phyton",
+    "rol" : "desarrollador",
+    "link" : "https://github.com/manutosetti/desafio-poo"
+    
+}
+]
+}
