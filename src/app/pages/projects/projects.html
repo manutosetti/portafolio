@@ -4,8 +4,9 @@
     @for (proyecto of projects; track proyecto.id) {
       <div class="card">
         <div class="card-content">
-          <h3>{{ proyecto.titulo }}</h3>
-          <p>{{ proyecto.descripcion }}</p>
+          <h3>{{ proyecto.nombre }}</h3>
+          <p>{{ proyecto.tecnologias }}</p>
+          <a href="{{proyecto.link}}">ir</a>
           </div>
         </div>
     }

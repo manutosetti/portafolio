@@ -8,11 +8,12 @@ import { ProjectService } from "../../service/projects";
   styleUrl: './projects.css',
 })
 export class Projects {
-projects:any = []
+projects:any;
 constructor(private servicio: ProjectService, private cdr: ChangeDetectorRef){
   this.servicio.obtenerProyectos().subscribe({
     next: (data) =>{
-      this.projects=data
+      this.projects=data;
+      console.log(data)
     },
     error: (error) => console.error(error),
     complete: ()=>{
