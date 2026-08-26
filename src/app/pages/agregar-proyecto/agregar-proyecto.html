@@ -1,0 +1,70 @@
+<section class="form-proyecto">
+  <h2>{{ idProyecto ? 'Editar proyecto' : 'Agregar nuevo proyecto' }}</h2>
+
+  <form [formGroup]="form" (ngSubmit)="guardar()">
+
+    <div class="campo">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" formControlName="nombre">
+      @if (enviado && form.controls.nombre.invalid) {
+        <p class="error">
+          @if (form.controls.nombre.errors?.['required']) {
+            El nombre es obligatorio.
+          }
+          @if (form.controls.nombre.errors?.['minlength']) {
+            El nombre debe tener al menos 3 caracteres.
+          }
+        </p>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="descripcion">Descripción</label>
+      <textarea id="descripcion" formControlName="descripcion" rows="3"></textarea>
+      @if (enviado && form.controls.descripcion.invalid) {
+        <p class="error">
+          @if (form.controls.descripcion.errors?.['required']) {
+            La descripción es obligatoria.
+          }
+          @if (form.controls.descripcion.errors?.['minlength']) {
+            La descripción debe tener al menos 10 caracteres.
+          }
+        </p>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="tecnologias">Tecnologías</label>
+      <input id="tecnologias" type="text" formControlName="tecnologias">
+      @if (enviado && form.controls.tecnologias.invalid) {
+        <p class="error">Las tecnologías son obligatorias.</p>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="rol">Rol</label>
+      <input id="rol" type="text" formControlName="rol">
+      @if (enviado && form.controls.rol.invalid) {
+        <p class="error">El rol es obligatorio.</p>
+      }
+    </div>
+
+    <div class="campo">
+      <label for="link">Link</label>
+      <input id="link" type="text" formControlName="link">
+      @if (enviado && form.controls.link.invalid) {
+        <p class="error">
+          @if (form.controls.link.errors?.['required']) {
+            El link es obligatorio.
+          }
+          @if (form.controls.link.errors?.['minlength']) {
+            El link ingresado no parece válido.
+          }
+        </p>
+      }
+    </div>
+
+    <button type="submit">{{ idProyecto ? 'Guardar cambios' : 'Guardar proyecto' }}</button>
+
+  </form>
+</section>

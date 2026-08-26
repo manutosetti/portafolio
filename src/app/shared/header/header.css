@@ -1,0 +1,18 @@
+.site-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-2) var(--space-3) 0;
+}
+
+.site-title {
+  font-family: var(--font-mono);
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.site-subtitle {
+  font-family: var(--font-mono);
+  color: var(--accent-keyword);
+  margin: 0 0 var(--space-1);
+}

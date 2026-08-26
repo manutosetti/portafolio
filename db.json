@@ -1,33 +1,36 @@
 {
-"proyectos" : [
+  "proyectos": [
     {
-        "id": "1",
-        "nombre" : "server apache",
-        "tecnologias" : "javaSCript, php, CSS, HTML",
-        "rol" : "desarrollador",
-        "link" : "https://github.com/manutosetti/apache"
+      "id": "1",
+      "nombre": "Server Apache",
+      "descripcion": "Configuracion de un servidor Apache para levantar un sitio web local.",
+      "tecnologias": "javaSCript, php, CSS, HTML",
+      "rol": "desarrollador",
+      "link": "https://github.com/manutosetti/apache"
     },
-{
-    "id": "2",
-    "nombre" : "historia",
-    "tecnologias" : "javaSCript, SS, HTML",
-    "rol" : "desarrollador",
-    "link" : "https://github.com/manutosetti/elevadora-sampi"
-},
-{
-    "id": "3",
-    "nombre" : "colaboracion",
-    "tecnologias" : "phyton",
-    "rol" : "desarrollador",
-    "link" : "https://github.com/manutosetti/colaboracion"
-},
-{
-    "id": "4",
-    "nombre" : "desafios-poo",
-    "tecnologias" : "phyton",
-    "rol" : "desarrollador",
-    "link" : "https://github.com/manutosetti/desafio-poo"
-    
-}
-]
+    {
+      "id": "2",
+      "nombre": "Historia",
+      "descripcion": "Pagina web sobre una elevadora, con maquetado en HTML y CSS.",
+      "tecnologias": "javaSCript, SS, HTML",
+      "rol": "desarrollador",
+      "link": "https://github.com/manutosetti/elevadora-sampi"
+    },
+    {
+      "id": "3",
+      "nombre": "Colaboracion",
+      "descripcion": "Proyecto grupal en Python para practicar trabajo colaborativo.",
+      "tecnologias": "phyton",
+      "rol": "desarrollador",
+      "link": "https://github.com/manutosetti/colaboracion"
+    },
+    {
+      "id": "4",
+      "nombre": "Desafios POO",
+      "descripcion": "Ejercicios de programacion orientada a objetos resueltos en Python.",
+      "tecnologias": "phyton",
+      "rol": "desarrollador",
+      "link": "https://github.com/manutosetti/desafio-poo"
+    }
+  ]
 }

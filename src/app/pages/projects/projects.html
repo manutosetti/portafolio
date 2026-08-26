@@ -1,14 +1,23 @@
 <section class="projects">
+
+  <a routerLink="/agregar-proyecto" class="link-agregar">Agregar proyecto</a>
+
   <div class="projects-container">
 
     @for (proyecto of projects; track proyecto.id) {
       <div class="card">
         <div class="card-content">
           <h3>{{ proyecto.nombre }}</h3>
-          <p>{{ proyecto.tecnologias }}</p>
-          <a href="{{proyecto.link}}">ir</a>
+          <p>{{ proyecto.descripcion }}</p>
+          <p class="card-tecnologias">{{ proyecto.tecnologias }}</p>
+          <a [href]="proyecto.link" target="_blank" rel="noopener">ir al repo</a>
+
+          <div class="card-acciones">
+            <a [routerLink]="['/editar-proyecto', proyecto.id]">editar</a>
+            <button (click)="eliminar(proyecto.id)">eliminar</button>
           </div>
         </div>
+      </div>
     }
 
   </div>

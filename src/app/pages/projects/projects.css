@@ -4,6 +4,47 @@
   margin: 0 auto;
 }
 
+.link-agregar {
+  display: inline-block;
+  margin-bottom: var(--space-3);
+  font-family: var(--font-mono);
+  color: var(--accent-keyword);
+  text-decoration: none;
+}
+
+.link-agregar:hover {
+  color: var(--accent-string);
+}
+
+.card-tecnologias {
+  color: var(--text-faint) !important;
+}
+
+.card-acciones {
+  display: flex;
+  gap: var(--space-1);
+  margin-top: var(--space-1);
+}
+
+.card-acciones a,
+.card-acciones button {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  padding: 4px 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card-acciones a:hover,
+.card-acciones button:hover {
+  color: var(--accent-string);
+  border-color: var(--accent-string);
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
